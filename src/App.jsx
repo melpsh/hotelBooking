@@ -6,7 +6,7 @@ import LocationList from "./components/LocationList";
 import { Route, Routes } from "react-router-dom";
 import AppLayout from "./components/AppLayout";
 import Hotels from "./components/Hotels";
-import HotelsProvider from "./components/context/hotelsProvider";
+import HotelsProvider from "./components/context/HotelsProvider";
 
 function App() {
   return (
