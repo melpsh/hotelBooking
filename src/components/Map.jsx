@@ -5,9 +5,9 @@ import { useNavigate, useSearchParams } from "react-router-dom";
 import useGeoLocation from "../hooks/useGeoLocation";
 
 
-const Map = () => {
+const Map = ({markerLocation}) => {
     const [mapCenter, setMapCenter] = useState([50,4]);
-    const {hotels, isLoading} = useHotels();
+    // const {hotels, isLoading} = useHotels();
     const [searchParams, setSearchParams] = useSearchParams();
     const lat = searchParams.get('lat');
     const lng = searchParams.get('lng');
@@ -33,7 +33,7 @@ const Map = () => {
         />
         <ChangeCenter position={mapCenter} />
         <DetectClick />
-            {hotels.map(item=>(
+            {markerLocation.map(item=>(
             <Marker position={[item.latitude, item.longitude]} key={item.id}>
                 <Popup>
                     {item.host_location}
@@ -60,7 +60,7 @@ function ChangeCenter({position}){
 function DetectClick(){
   const navigate = useNavigate();
   useMapEvent({
-    click: (e)=> console.log(e)    
+    click: (e)=> navigate(`/bookmarks/add?lat=${e.latlng.lat}&lng=${e.latlng.lng}`)
   });
   return null;
 }
