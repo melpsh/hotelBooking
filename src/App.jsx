@@ -12,6 +12,7 @@ import BookmarkLayout from "./components/BookmarkLayout";
 import BookmarkProvider from "./components/context/BookmarkProvider";
 import BookmarkList from "./components/BookmarkList";
 import SingleBookmark from "./components/SingleBookmark";
+import AddNewBookmark from "./components/AddNewBookmark";
 
 function App() {
   return (
@@ -27,9 +28,10 @@ function App() {
       </Route>
       <Route path="/bookmarks" element={<BookmarkLayout />}>
         <Route index element={<BookmarkList />} />
-        <Route path="add" element={<div>Bookmark Form add</div>} />
+        <Route path="add" element={<AddNewBookmark />} />
         <Route path=":id" element={<SingleBookmark />} />
       </Route>
+
     </Routes>
       </BookmarkProvider>
     </HotelsProvider>

@@ -3,14 +3,14 @@ import { MapContainer, Marker, Popup, TileLayer, useMap, useMapEvent } from "rea
 import { useHotels } from "./context/HotelsProvider";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import useGeoLocation from "../hooks/useGeoLocation";
+import useUrlLocation from "../hooks/useUrlLocation";
 
 
 const Map = ({markerLocation}) => {
     const [mapCenter, setMapCenter] = useState([50,4]);
     // const {hotels, isLoading} = useHotels();
-    const [searchParams, setSearchParams] = useSearchParams();
-    const lat = searchParams.get('lat');
-    const lng = searchParams.get('lng');
+    const [lat, lng] = useUrlLocation();
+
     const {getPosition, position: geoLocationPosition, loading: loadingGeoPosition} = useGeoLocation();
 
     useEffect(()=>{

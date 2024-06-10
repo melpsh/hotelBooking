@@ -5,9 +5,17 @@ import Loader from "./Loader";
 import { Link } from "react-router-dom";
 
 const BookmarkList = () => {
-    const {currentBookmark, bookmark, isLoading} = useBookmarks();
+    const { bookmark, isLoading} = useBookmarks();
     if(isLoading){
         return <Loader />
+    }
+    if(!bookmark.length){
+        return <div>
+            <strong>
+            There is no bookmarks yet
+            </strong>
+            
+        </div>
     }
   return (
     <div>
