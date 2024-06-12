@@ -1323,5 +1323,150 @@
       ]
     }
   ],
-  "bookmarks": []
+  "bookmarks": [
+    {
+      "cityName": "Paris",
+      "country": "France",
+      "countryCode": "FR",
+      "latitude": "48.82268881260476",
+      "longitude": "2.3510742187500004",
+      "host_location": "Paris France",
+      "id": 1
+    },
+    {
+      "cityName": "Luxembourg",
+      "country": "Luxembourg",
+      "countryCode": "LU",
+      "latitude": "49.60781780164274",
+      "longitude": "6.141357421875001",
+      "host_location": "Luxembourg Luxembourg",
+      "id": 2
+    },
+    {
+      "cityName": "Brussels",
+      "country": "Belgium",
+      "countryCode": "BE",
+      "latitude": "50.85515925376105",
+      "longitude": "4.339599609375001",
+      "host_location": "Brussels Belgium",
+      "id": 3
+    },
+    {
+      "cityName": "Amsterdam",
+      "country": "Netherlands (Kingdom of the)",
+      "countryCode": "NL",
+      "latitude": "52.35002148336117",
+      "longitude": "4.932861328125001",
+      "host_location": "Amsterdam Netherlands (Kingdom of the)",
+      "id": 4
+    },
+    {
+      "cityName": "Berlin",
+      "country": "Germany",
+      "countryCode": "DE",
+      "latitude": "52.517474393230245",
+      "longitude": "13.403320312500002",
+      "host_location": "Berlin Germany",
+      "id": 5
+    },
+    {
+      "cityName": "Rome",
+      "country": "Italy",
+      "countryCode": "IT",
+      "latitude": "41.86214623201816",
+      "longitude": "12.502441406250002",
+      "host_location": "Rome Italy",
+      "id": 6
+    },
+    {
+      "cityName": "Gulf of Naples",
+      "country": "Italy",
+      "countryCode": "IT",
+      "latitude": "40.80211542040426",
+      "longitude": "14.271240234375002",
+      "host_location": "Gulf of Naples Italy",
+      "id": 7
+    },
+    {
+      "cityName": "Ligurian Sea Cetacean Sanctuary",
+      "country": "Italy",
+      "countryCode": "IT",
+      "latitude": "43.756712928570245",
+      "longitude": "7.547607421875001",
+      "host_location": "Ligurian Sea Cetacean Sanctuary Italy",
+      "id": 8
+    },
+    {
+      "cityName": "Monaco",
+      "country": "Monaco",
+      "countryCode": "MC",
+      "latitude": "43.729026186688785",
+      "longitude": "7.413711547851563",
+      "host_location": "Monaco Monaco",
+      "id": 9
+    },
+    {
+      "cityName": "Andorra la Vella",
+      "country": "Andorra",
+      "countryCode": "AD",
+      "latitude": "42.49880771184274",
+      "longitude": "1.5216064453125",
+      "host_location": "Andorra la Vella Andorra",
+      "id": 10
+    },
+    {
+      "cityName": "Madrid",
+      "country": "Spain",
+      "countryCode": "ES",
+      "latitude": "40.3815975700864",
+      "longitude": "-3.6804199218750004",
+      "host_location": "Madrid Spain",
+      "id": 11
+    },
+    {
+      "cityName": "Lisbon",
+      "country": "Portugal",
+      "countryCode": "PT",
+      "latitude": "38.710261404177636",
+      "longitude": "-9.132385253906252",
+      "host_location": "Lisbon Portugal",
+      "id": 12
+    },
+    {
+      "cityName": "London",
+      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
+      "countryCode": "GB",
+      "latitude": "51.49570596538067",
+      "longitude": "-0.14831542968750003",
+      "host_location": "London United Kingdom of Great Britain and Northern Ireland (the)",
+      "id": 13
+    },
+    {
+      "cityName": "Dublin",
+      "country": "Ireland",
+      "countryCode": "IE",
+      "latitude": "53.34522266586595",
+      "longitude": "-6.262207031250001",
+      "host_location": "Dublin Ireland",
+      "id": 14
+    },
+    {
+      "cityName": "Bucharest",
+      "country": "Romania",
+      "countryCode": "RO",
+      "latitude": "44.43200245932162",
+      "longitude": "26.10214233398438",
+      "host_location": "Bucharest Romania",
+      "id": 15
+    },
+    {
+      "cityName": "Vancouver",
+      "country": "Canada",
+      "countryCode": "CA",
+      "latitude": "49.26520017450573",
+      "longitude": "-123.11553955078126",
+      "host_location": "Vancouver Canada",
+      "id": 16
+    }
+  ]
 }
