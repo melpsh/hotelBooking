@@ -1323,15 +1323,5 @@
       ]
     }
   ],
-  "bookmarks": [
-    {
-      "cityName": "Wignehies",
-      "country": "France",
-      "countryCode": "FR",
-      "latitude": "50.03026052646386",
-      "longitude": "4.011383056640626",
-      "host_location": "Wignehies France",
-      "id": 1
-    }
-  ]
+  "bookmarks": []
 }

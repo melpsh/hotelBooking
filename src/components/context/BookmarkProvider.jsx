@@ -47,7 +47,19 @@ const BookmarkProvider = ({children}) => {
        try{
           const {data} = await axios.post(`${BASE_URL}/`,newBookmark);
           setBookmark((pre)=> [...pre,newBookmark])
-       }catch{
+       }catch(error){
+        toast.error(error.message);
+       }finally{
+        setIsLoading(false);
+       }
+    }
+
+    async function deleteBookmark(id){
+      setIsLoading(true);
+      try{
+        await axios.delete(`${BASE_URL}/${id}`);
+        setBookmark((pre)=> pre.filter((item)=> item.id !== id));
+      }catch(error){
         toast.error(error.message);
        }finally{
         setIsLoading(false);
@@ -55,7 +67,7 @@ const BookmarkProvider = ({children}) => {
     }
 
   return (
-    <BookmarkContext.Provider value={{ getBookmark, currentBookmark, bookmark, isLoading, createBookmark}}>
+    <BookmarkContext.Provider value={{ getBookmark, currentBookmark, bookmark, isLoading, createBookmark, deleteBookmark}}>
       {children}
     </BookmarkContext.Provider>
   )
