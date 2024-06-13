@@ -1467,6 +1467,51 @@
       "longitude": "-123.11553955078126",
       "host_location": "Vancouver Canada",
       "id": 16
+    },
+    {
+      "cityName": "Washington",
+      "country": "United States of America (the)",
+      "countryCode": "US",
+      "latitude": "38.889295860173895",
+      "longitude": "-77.03338623046876",
+      "host_location": "Washington United States of America (the)",
+      "id": 17
+    },
+    {
+      "cityName": "Panama",
+      "country": "Panama",
+      "countryCode": "PA",
+      "latitude": "8.997669663939334",
+      "longitude": "-79.49707031250001",
+      "host_location": "Panama Panama",
+      "id": 18
+    },
+    {
+      "cityName": "Ampitatafika",
+      "country": "Madagascar",
+      "countryCode": "MG",
+      "latitude": "-18.93551597920614",
+      "longitude": "47.471923828125",
+      "host_location": "Ampitatafika Madagascar",
+      "id": 19
+    },
+    {
+      "cityName": "Moscow",
+      "country": "Russian Federation (the)",
+      "countryCode": "RU",
+      "latitude": "55.73078331708113",
+      "longitude": "37.64465332031251",
+      "host_location": "Moscow Russian Federation (the)",
+      "id": 20
+    },
+    {
+      "cityName": "Istanbul",
+      "country": "Turkiye",
+      "countryCode": "TR",
+      "latitude": "40.990054216529266",
+      "longitude": "29.022102355957035",
+      "host_location": "Istanbul Turkiye",
+      "id": 21
     }
   ]
 }
