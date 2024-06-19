@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { useAuth } from "./context/AuthProvider";
 import { useNavigate } from "react-router-dom";
+import { useAuth } from "./context/AuthProviders";
 
 const Login = () => {
-    const [email, setEmail] = useState("melina@gamil.com");
+    const [email, setEmail] = useState("melina@gmail.com");
     const [passWord, setPassword] = useState("test1234");
 
     const {login, isAuthenticated} = useAuth();
@@ -11,8 +11,10 @@ const Login = () => {
     
     const handleSubmit = (e) =>{
         e.preventDefault();
-        if(email && passWord)
+        if(email && passWord){
             login(email, passWord);
+            // console.log(email , passWord);
+        }
     }
 
     useEffect(()=>{

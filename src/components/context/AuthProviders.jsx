@@ -29,32 +29,34 @@ const initialState = {
 
 
   const fakeUser={
-    email: "mel@gmail.com",
-    passWord: "test123",
+    email: "melina@gmail.com",
+    passWord: "test1234",
     name: "melina"
   }
 
 
-export default function AuthProvider({children}){
+export default function AuthProviders({children}){
+  const [{user, isAuthenticated},dispatch] = useReducer(authReducer,initialState);
 
     function login(email, passWord){
-        if(email === fakeUser.email && passWord === fakeUser.passWord)
-            dispatch({type: "login", payload : fakeUser})
+      if(email === fakeUser.email && passWord === fakeUser.passWord){
+          console.log(fakeUser.email);
+          console.log(fakeUser.passWord);
+          console.log(email,passWord);
+          dispatch({type: "login", payload : fakeUser})
+        }
       }
     
       function logout(){
         dispatch({type:"logout"})
       }
 
-   const [{user, isAuthenticated},dispatch] = useReducer(authReducer,initialState);
     return (
     <AuthContext.Provider value={{user, isAuthenticated, login, logout}}>
         {children}
     </AuthContext.Provider>
   )
 };
-
-
 
 export function useAuth(){
     return useContext(AuthContext);

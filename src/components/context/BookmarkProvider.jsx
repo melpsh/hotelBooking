@@ -4,8 +4,6 @@ import axios from "axios";
 import toast from "react-hot-toast";
 import useFetch from "../../hooks/useFetch";
 
-
-
 const initialState = {
   currentBookmark: null,
   isLoading: false,
