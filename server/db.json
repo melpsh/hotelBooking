@@ -1512,6 +1512,15 @@
       "longitude": "29.022102355957035",
       "host_location": "Istanbul Turkiye",
       "id": 21
+    },
+    {
+      "cityName": "Madrid",
+      "country": "Spain",
+      "countryCode": "ES",
+      "latitude": "40.415685247534164",
+      "longitude": "-3.7106323242187504",
+      "host_location": "Madrid Spain",
+      "id": 22
     }
   ]
 }

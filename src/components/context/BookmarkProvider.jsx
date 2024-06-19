@@ -59,6 +59,7 @@ function bookmarkReducer(state, action){
 
 const BookmarkContext = createContext();
 const BASE_URL = "http://localhost:5000/bookmarks";
+
 const BookmarkProvider = ({children}) => {
     
     // const [currentBookmark, setCurrentBookmark] = useState(null);

@@ -7,7 +7,8 @@ import { DateRange } from "react-date-range";
 import { format } from "date-fns";
 import 'react-date-range/dist/styles.css'; // main style file
 import 'react-date-range/dist/theme/default.css'; // theme css file
-import { createSearchParams, json, useNavigate, useSearchParams } from "react-router-dom";
+import { NavLink, createSearchParams, json, useNavigate, useSearchParams } from "react-router-dom";
+import { useAuth } from "./context/AuthProvider";
 
 const Header = () => {
     
@@ -85,7 +86,10 @@ const Header = () => {
             <HiSearch className="headerIcon"/>
         </button>
     </div>
+
     </div>
+    {}
+    <NavLink to={"/login"}>Login</NavLink>
   </div>
   )
 
@@ -94,6 +98,17 @@ const Header = () => {
 export default Header;
 
 
+
+function User(){
+    const {user, isAuthenticated, logout} = useAuth();
+        return (
+            <div>
+                {isAuthenticated ? 
+                (<div>{user.name}</div>)
+                : <NavLink to={"/login"}>Login</NavLink>}
+            </div>
+    )
+}
 
 
 const GuestOptionList = ({options, hanleOptions, setOpenOptions}) => {
