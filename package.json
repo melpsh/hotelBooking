@@ -5,7 +5,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "start": "vite",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "server": "json-server --watch server/db.json --port 5000 --delay 500",
